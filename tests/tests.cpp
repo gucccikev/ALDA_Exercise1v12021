@@ -5,6 +5,7 @@
 //#define CATCH_CONFIG_MAIN // defines main() automatically
 #include "catch.hpp"
 #include "../main.hpp"
+#include <string.h>
 
 
 // =====================
