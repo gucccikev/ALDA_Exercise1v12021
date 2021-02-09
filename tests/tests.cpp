@@ -130,7 +130,7 @@ TEST_CASE("Test10", "[MemSwap]")
     memcpy(comparison1,data1,sizeof(data1));
     memcpy(comparison2,data2,sizeof(data1));
     memswap((char*)data1, (char*)data2, sizeof(data1));
-    INFO("Testing MemSwap on integer arrays failed.");
+    INFO("Testing MemSwap on short arrays failed.");
     for(int i = 0; i < 10; i++){
         REQUIRE(data1[i] == comparison2[i]);
         REQUIRE(data2[i] == comparison1[i]);
