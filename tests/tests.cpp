@@ -42,7 +42,7 @@ TEST_CASE("Test3", "[InversionCount]")
 {
     int expected [5] = {0};
     int numbers [5]  = {1,2,3,4,5};
-    int inversions [5];
+    int inversions [5] = {1,1,1,1,1};
     inversionCount(5,numbers,inversions);
     INFO("Testing inversions for numbers {1,2,3,4,5} failed.");
     for(int i = 0; i < 5; i++){
@@ -84,7 +84,7 @@ TEST_CASE("Test7", "[InversionCount]")
 {
     int expected [1] = {0};
     int numbers [1]  = {1};
-    int inversions [1];
+    int inversions [1] = {1};
     inversionCount(1,numbers,inversions);
     INFO("Testing inversions for numbers {1} failed.");
     for(int i = 0; i < 1; i++){
