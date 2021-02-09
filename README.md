@@ -1,19 +1,8 @@
-# autograding-example-cpp-catch
-
-*Learning Autograding with C/C++ and Catch2 - Prof. Igor Machado Coelho*
-
-**IMPORTANT:** If autograding (GitHub Actions) doesn't start for you, *check again the Invitation Link for
-the activity* and hit the link named **update**.
-
-If you want to practice this activity, just follow this link: https://classroom.github.com/a/X_8PAk4h
-
-## Full-Name-Of-Student
-
-**TODO - Please put your name in this README**
+# Exercise 1
 
 ## Problem Description
 
-This part describes the activity. This example activity consists in fixing two functions: one that adds two integers, and another that multiplies two integers.
+See Moodle course and source code TODO instructions for details.
 
 ## Objective
 
@@ -22,24 +11,25 @@ This part describes the activity. This example activity consists in fixing two f
 
 - The GitHub Actions should present a green marker when all tests are satisfied, and a red X when some (or all) of tests fail. 
     * **Advice:** You can click on the red X to verify which tests have failed (or if code didn't compile correctly).
-    * **Advice 2:** If no autograding test appear, it may be required for the **instructor** to *update the test activities*, so that all student repos are refreshed (regarding autograding).
 
 ## Instructions
 
-- You can ONLY change files `student.hpp` and `README.md`!
-   * In file `student.hpp` put your implementations, and in `README.md` put your full name.
+- You can ONLY change file `main.cpp`!
+   * In file `main.cpp` put your implementations in C programming language, only.
 
 Explanations for the other files:
 
 - file `tests.cpp` has all tests for the activity (DO NOT CHANGE!)
 - file `catch.hpp` has the testing library  CATCH2 (DO NOT CHANGE!)
 - file `makefile` has the commands for executing activity (DO NOT CHANGE!)
-- file  `appTests` will be generated after compiling (if you want to test locally, just execute it)
+- file  `exercise1` will be generated after compiling (if you want to test locally, just execute it)
 
 ## Commands for Local Testing
 
-- Command to build and execute tests: `make test`
+- Open a console / terminal window
+- Command to build and execute tests: `make`
     * If executable is built already, just type: `./appTests`
+- Or use your fully fledged IDE ;) 
 
 ## Notes
 
@@ -51,7 +41,6 @@ Explanations for the other files:
 - The final grade will be given automatically on every *commit*, and will only be evaluated until the deadline of the activity.
 
 - The deadline is defined in GitHub Classroom
-   * in case you cannot find it, ask the instructor or the course webpage
 
 Check all other rules with instructor.
 
