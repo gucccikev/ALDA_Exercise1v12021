@@ -3,7 +3,7 @@
 #	http://www.gnu.org/software/make/manual/make.html
 
 CXX=g++
-CPPFLAGS=-fsanitize=address --std=c++17
+CPPFLAGS=--std=c++17
 
 DEPS=main.hpp
 OBJ=main.o tests/tests.o
