@@ -15,6 +15,23 @@ int runCatchTests(int argc, char* const argv[])
 // ---------------------
 void eratosthenes(int n, int* sieve){
    //TODO
+    for (int i = 2; i < n; i++) {
+        sieve[i] = 1;
+    }
+    for (int i = 0; i < n; i++) {
+        printf("%i", sieve[i]);
+    }
+    for (int i = 2; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (j % i == 0) {
+                sieve[j] = 0;
+            }
+        }
+    }
+    for (int i = 0; i < n; i++) {
+        printf("%i\n", sieve[i]);
+    }
+
 }
 
 // =====================
@@ -22,7 +39,25 @@ void eratosthenes(int n, int* sieve){
 // ---------------------
 int inversionCount(int size, int *numbers, int *inversions){
     //TODO
-    return -1;
+
+    int counter = 0;
+
+    for (int i = 0; i < size; i++) {
+        inversions[i] = 0;
+    }
+
+    for (int i = 0; i < size; i++) {
+        for (int j = i + 1; j < size; j++) {
+            if (numbers[i] > numbers[j]) {
+                inversions[i] += 1;
+                counter++;
+            }
+        }
+    }
+
+
+    return counter;
+
 }
 
 // =====================
@@ -30,6 +65,18 @@ int inversionCount(int size, int *numbers, int *inversions){
 // ---------------------
 void memswap(char *mem1, char *mem2, int size) {
     // TODO
+    char help;
+
+    /*for (int i = 0; i < size; i++) {
+        printf("%i", mem1[i]);
+    }*/
+
+    for (int i = 0; i < size; i++) {
+        help = mem1[i];
+        mem1[i] = mem2[i];
+        mem2[i] = help;
+    }
+
 }
 
 
